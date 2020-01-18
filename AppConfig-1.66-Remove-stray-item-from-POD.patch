@@ -1,0 +1,45 @@
+From 64ddb19e19666f9d5d9af0e298a1751da5c02519 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Petr=20P=C3=ADsa=C5=99?= <ppisar@redhat.com>
+Date: Thu, 18 Jul 2013 17:44:18 +0200
+Subject: [PATCH] Remove stray =item from POD
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<https://rt.cpan.org/Public/Bug/Display.html?id=84318>
+
+Signed-off-by: Petr Písař <ppisar@redhat.com>
+---
+ lib/AppConfig/State.pm | 2 --
+ lib/AppConfig/Sys.pm   | 2 --
+ 2 files changed, 4 deletions(-)
+
+diff --git a/lib/AppConfig/State.pm b/lib/AppConfig/State.pm
+index 8374f1c..0d064ee 100644
+--- a/lib/AppConfig/State.pm
++++ b/lib/AppConfig/State.pm
+@@ -1268,8 +1268,6 @@ Be aware that calling C<$state-E<gt>set()> to update the same variable
+ from within the ACTION function will cause a recursive loop as the
+ ACTION function is repeatedly called.  
+ 
+-=item 
+-
+ =back
+ 
+ =head2 DEFINING VARIABLES USING THE COMPACT FORMAT
+diff --git a/lib/AppConfig/Sys.pm b/lib/AppConfig/Sys.pm
+index 38ddcc2..72692c3 100644
+--- a/lib/AppConfig/Sys.pm
++++ b/lib/AppConfig/Sys.pm
+@@ -280,8 +280,6 @@ Calls the system function getpwuid() if available and returns the result.
+ Returns undef if not available.  The can_getpwuid() method can be called to
+ determine if this function is available.
+ 
+-=item 
+-
+ =back
+ 
+ =head1 AUTHOR
+-- 
+1.8.1.4
+
