@@ -1,6 +1,6 @@
 Name:           perl-AppConfig
 Version:        1.66
-Release:        19%{?dist}
+Release:        20%{?dist}
 Summary:        Perl module for reading configuration files
 
 Group:          Development/Libraries
@@ -74,6 +74,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.66-20
+- Mass rebuild 2013-12-27
+
 * Mon Sep  9 2013 Petr Pisar <ppisar@redhat.com> - 1.66-19
 - Fix documentation (CPAN RT#84318)
 
